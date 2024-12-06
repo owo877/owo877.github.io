@@ -98,6 +98,7 @@ a {
     padding: 20px;
     /* TODO:edit */
     overflow-y: auto;
+    font-family: 'MonaspaceRadon',sans-serif;
 }
 
 iframe {
@@ -129,9 +130,9 @@ iframe {
     }
 }
 
-/* @font-face {
-    font-family: 'MyCustomFont';
-    src: url('https://owo877.github.io/repository/raw/main/assets/fonts/myfont.ttf') format('truetype');
+@font-face {
+    font-family: 'MonaspaceRadon';
+    src: url('../font/MonaspaceRadonVarVF[wght,wdth,slnt].woff') format('truetype');
     font-weight: normal;
     font-style: normal;
-} */
+}
