@@ -8,7 +8,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background: linear-gradient(45deg, rgb(126, 167, 245), rgb(180, 217, 230));
+    background: linear-gradient(45deg, #abc4ff, #ffd6ff);
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -36,12 +36,21 @@ a {
 .header-bar>div>h1 {
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
 }
-
-.homeIcon {
+.header-bar>a {
     position: relative;
     left: 10px;
+}
+.homeIcon {
+    
     width: 80px;
     border-radius: 30%;
+}
+
+.homeIcon:hover {
+    display: block;
+    /* 動畫 */
+    border: 2px solid #e7c6ff;
+    animation: borderColorChange 1s infinite;
 }
 
 .bannerImg {
@@ -69,18 +78,34 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
 .box-bar ul {
     list-style-type: none;
-    padding: 20px;
-    margin-top: -20px;
+    padding: 0px;
+    /* margin-top: -20px; */
 }
 
 .box-bar li {
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
-    margin: 15px 0;
     font-size: 18px;
+    box-sizing: content-box;
+    margin: 15px 0;
+    padding: 0 10px;
+    border-left: 3px solid #e7c6ff;
+    box-shadow: 0px 0px 20px #e7c6ff;
+    transition: ease-in-out  0.2s;
+    /* animation: boxShadowChange 5s infinite; */
+}
+
+.box-bar li:hover {
+    /* 側邊線特效 */
+    box-sizing: content-box;
+    padding-left: 5px;
+    border-left: 5px solid #abc4ff;
+    box-shadow: 5px 5px 10px #abc4ff;
+    transition: ease-in-out  0.2s;
 }
 
 .box-bar a {
@@ -89,7 +114,8 @@ a {
 }
 
 .box-bar a:hover {
-    color: #007bff;
+    /* 文字變色 */
+    color: #abc4ff;
 }
 
 /* 主要內容區域 */
@@ -112,8 +138,7 @@ iframe {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    /* background: rgba(255, 255, 255, 0.7); */
-    background: rgba(231, 166, 150, 0.7);
+    background: #e7c6ff;
     pointer-events: none;
     transform: scale(0);
     animation: ripple 0.4s ease-out;
@@ -130,15 +155,28 @@ iframe {
     }
 }
 
+/* 動畫變色 */
+@keyframes boxShadowChange {
+    0% {
+        box-shadow: 0px 0px 20px #e7c6ff;
+    }
+    50% {
+        box-shadow: 0px 0px 20px #abc4ff;
+    }
+    100% {
+        box-shadow: 0px 0px 20px #e7c6ff;
+    }
+}
+
 @font-face {
     font-family: 'MonaspaceRadon';
-    src: url('../font/MonaspaceRadonVarVF[wght,wdth,slnt].woff') format('truetype');
+    src: url('../font/MonaspaceRadonVarVF[wght,wdth,slnt].woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'naikaifont';
-    src: url('../font/NaikaiFont-Light.woff') format('truetype');
+    src: url('../font/NaikaiFont-Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
