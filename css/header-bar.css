@@ -1,0 +1,33 @@
+/* Header 部分 */
+.header-bar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-bar>div>h1 {
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+}
+.header-bar>a {
+    position: relative;
+    left: 10px;
+}
+.homeIcon {
+    width: 80px;
+    border-radius: 30%;
+}
+
+.homeIcon:hover {
+    display: block;
+    /* 動畫 */
+    border: 2px solid #e7c6ff;
+    animation: borderColorChange 1s infinite;
+}
+
+.bannerImg {
+    height: 100px;
+}
