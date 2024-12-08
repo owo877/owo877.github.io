@@ -37,13 +37,14 @@ a {
     /* overflow-y: auto; */
     font-family: 'naikaiFont',sans-serif;
 }
+
 .main-box {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
     box-sizing: border-box;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-between;
 }
 
@@ -60,8 +61,8 @@ a {
 .text-box {
     /* 滑動效果 */
     display: grid;
-    grid-template-rows: 1fr;
-    transition: 1s;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 1s;
     overflow: hidden;
 
     box-sizing: border-box;
