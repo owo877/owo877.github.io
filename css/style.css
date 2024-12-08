@@ -10,8 +10,8 @@ body {
     padding: 0;
     background: linear-gradient(45deg, #abc4ff, #ffd6ff);
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 
     overflow: hidden;
     cursor: pointer;
@@ -33,11 +33,18 @@ a {
 
 /* 主要內容區域 */
 .main {
-    flex: 1;
     padding: 20px;
-    /* TODO:edit */
-    overflow-y: auto;
+    /* overflow-y: auto; */
     font-family: 'naikaiFont',sans-serif;
+}
+.main-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 .text-box-content {
@@ -53,7 +60,7 @@ a {
 .text-box {
     /* 滑動效果 */
     display: grid;
-    grid-template-rows: 0fr;
+    grid-template-rows: 1fr;
     transition: 1s;
     overflow: hidden;
 

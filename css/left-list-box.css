@@ -1,6 +1,7 @@
 /* 左側欄目 */
 .bar-box {
     width: 140px;
+    min-width: 120px;
     height: 100%;
     background-color: #fff;
     border-right: 2px solid #ddd;
@@ -10,7 +11,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    
 }
 
 .bar-box ul {
