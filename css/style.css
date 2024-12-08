@@ -64,7 +64,7 @@ a {
     grid-template-rows: 0fr;
     transition: grid-template-rows 1s;
     overflow: hidden;
-
+    /*  */
     box-sizing: border-box;
     width: 450px;
     margin-top: 10px;
