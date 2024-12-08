@@ -7,37 +7,31 @@
 ## tree
 ```
 .
-│  favicon.ico
-│  index.html
-│  LICENSE.txt
-│  README.md
-│
-├─.vscode
-│      settings.json
-│
-├─css
-│      click.css
-│      header-bar.css
-│      left-list-box.css
-│      style.css
-│
-├─font
-│      MonaspaceRadonVarVF[wght,wdth,slnt].woff
-│      NaikaiFont-Light.woff
-│
-├─img
-│      homeImg.gif
-│      testImg1.gif
-│      testImg2.webp
-│
-├─js
-│      clickJS.js
-│      loadPageJS.js
-│
-└─期末報告
-        home.html
-        page1.html
-        page2.html
-        page3.html
-        page4.html
+├─ .vscode
+│  └─  settings.json
+├─ css/
+│  ├─  click.css
+│  ├─  header-bar.css
+│  ├─  left-list-box.css
+│  └─  style.css
+├─ font/
+│  ├─  MonaspaceRadonVarVF[wght,wdth,slnt].woff
+│  └─  NaikaiFont-Light.woff
+├─ img/
+│  ├─  homeImg.gif
+│  ├─  testImg1.gif
+│  └─  testImg2.webp
+├─ js/
+│  ├─  clickJS.js
+│  └─  loadPageJS.js
+├─ 期末報告/
+│  ├─  home.html
+│  ├─  page1.html
+│  ├─  page2.html
+│  ├─  page3.html
+│  └─  page4.html
+├─ favicon.ico
+├─ index.html
+├─ LICENSE.txt
+└─ README.md
 ```
