@@ -34,9 +34,9 @@ a {
 /* 主要內容區域 */
 .main {
     padding: 20px;
-    /* overflow-y: auto; */
+    overflow-y: auto;
     font-family: 'naikaiFont',sans-serif;
-    overflow: auto; /* 滾動條 */
+    /* overflow: auto; 滾動條 */
 }
 
 .main-box {
@@ -75,6 +75,24 @@ a {
     text-align: justify;
     letter-spacing: 2px;
     line-height: 1.5;
+}
+
+.text-box li{
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* 自定義頭文字 */
+.text-box li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: #000;
+}
+
+.text-box p{
+    font-size: 18px;
 }
 
 /* 滑動效果 */
