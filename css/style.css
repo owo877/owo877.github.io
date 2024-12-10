@@ -22,6 +22,18 @@ a {
     color: inherit;
 }
 
+th:nth-child(1){
+    width: 10em;
+}
+
+th:nth-child(2){
+    width: 20em;
+}
+
+th:nth-child(3){
+    width: 40em;
+}
+
 /* Navigation 部分 */
 .nav {
     display: flex;
@@ -35,7 +47,7 @@ a {
 .main {
     padding: 20px;
     overflow-y: auto;
-    font-family: 'naikaiFont',sans-serif;
+    font-family: 'MonaspaceRadon', 'naikaiFont', sans-serif;
     /* overflow: auto; 滾動條 */
 }
 

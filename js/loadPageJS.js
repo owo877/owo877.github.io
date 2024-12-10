@@ -14,6 +14,6 @@ function loadPage(url) {
         .catch(error => {
             // 處理錯誤
             console.error('載入頁面失敗:', error);
-            document.getElementById('contentArea').innerHTML = `<p>無法載入頁面：${error.message}</p>`;
+            document.getElementById('contentArea').innerHTML = `<p>無法載入頁面：${error.message} 請嘗試此頁面：https://owo877.github.io/%E6%9C%9F%E6%9C%AB%E5%A0%B1%E5%91%8A/home.html</p>`;
         });
 }

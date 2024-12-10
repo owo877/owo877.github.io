@@ -1,0 +1,60 @@
+<html>
+<body>
+	<!-- 內容 -->
+    <div class="main-box">
+        <div class="text-box-content">
+            <h2>HTTP</h2>
+            <div class="text-box">
+                <div>HTTP（HyperText Transfer Protocol，超文本傳輸協定）是一種應用層協定，設計用於分佈式、協作式和超媒體的資訊系統之間進行通信。它是現代網頁傳輸的核心技術，瀏覽器與伺服器之間通過 HTTP 進行數據交換。</div>
+            </div>
+        </div>
+
+        <div class="text-box-content">
+            <h2>基本特點</h2>
+            <div class="text-box">
+                <div>
+                    <li>無狀態性：HTTP是無狀態協定，意味著每次請求都是獨立的，伺服器不會記住之前的請求。無狀態性提高了性能，但也帶來了狀態維護的挑戰（例如，使用 Cookie 和 Session 解決）。</li>
+                    <li>靈活性：HTTP可傳輸多種類型的數據（文本、圖片、音訊、視頻等），只需在內容類型標頭（Content-Type）中指定。</li>
+                    <li>基於請求-回應模型：客戶端（如瀏覽器）發送請求，伺服器處理並回應，回應包含狀態碼和數據內容。</li> 
+                    <li>可擴展性：HTTP支持通過標頭（Headers）傳遞額外資訊，允許用戶定義特定需求。</li>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-box-content">
+            <h2>工作流程</h2>
+            <div class="text-box">
+                <div>
+                    <li>建立連接：客戶端通過DNS獲取伺服器的IP地址，並與伺服器建立TCP連接（通常在端口 80或443）。</li>
+                    <li>發送請求：客戶端發送一個HTTP請求報文，其中包括方法（如GET）、路徑（如/index.html）及標頭（Headers）。</li>
+                    <li>伺服器響應：伺服器處理請求，返回一個HTTP響應報文，包括狀態碼、標頭和數據。</li> 
+                    <li>關閉連接：完成傳輸後，伺服器和客戶端可以選擇關閉或保留連接（HTTP/1.1的Keep-Alive功能）。</li>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-box-content">
+            <h2>HTTP與HTTPS的區別</h2>
+            <div class="text-box">
+                <div>
+                    <li>HTTP 是明文傳輸，數據未加密，容易被攔截。</li>
+                    <li>HTTPS（HTTP Secure）結合SSL/TLS協定，為數據提供加密保護，並驗證伺服器身份，常用於網絡交易或敏感數據傳輸。</li>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-box-content">
+            <h2>應用範疇</h2>
+            <div class="text-box">
+                <div>
+                    <li>網頁訪問：瀏覽器通過HTTP請求網頁並顯示給用戶。</li>
+                    <li>API 通信：應用程式之間通過HTTP傳遞數據（如RESTful API）。</li>
+                    <li>文件傳輸：HTTP支持下載和上傳多種文件類型。</li>
+                    <li>物聯網（IoT）：設備間使用HTTP傳輸狀態或指令。</li>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
