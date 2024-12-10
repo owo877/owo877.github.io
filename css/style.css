@@ -22,18 +22,6 @@ a {
     color: inherit;
 }
 
-th:nth-child(1){
-    width: 10em;
-}
-
-th:nth-child(2){
-    width: 20em;
-}
-
-th:nth-child(3){
-    width: 40em;
-}
-
 /* Navigation 部分 */
 .nav {
     display: flex;
@@ -70,6 +58,11 @@ th:nth-child(3){
     border: 2px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.text-box-content img {
+    width: 100%;
+    height: auto;
 }
 
 .text-box {
@@ -118,6 +111,14 @@ th:nth-child(3){
     grid-template-rows: 1fr;
 }
 
+.info-table tr th:nth-child(1){
+    width: 10em;
+}
+
+.info-table tr th:nth-child(2){
+    width: 20em;
+}
+
 /* iframe {
     width: 100%;
     height: 100%;
@@ -136,6 +137,7 @@ th:nth-child(3){
         border: 3px solid #e7c6ff;
     }
 }
+
 @keyframes boxShadowChange {
     0% {
         box-shadow: 0px 0px 20px #e7c6ff;
@@ -148,6 +150,7 @@ th:nth-child(3){
     }
 }
 
+/* 導入字體 */
 @font-face {
     font-family: 'MonaspaceRadon';
     src: url('../font/MonaspaceRadonVarVF[wght,wdth,slnt].woff') format('woff');
